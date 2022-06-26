@@ -50,16 +50,25 @@ button{
     cursor: pointer;
 }
 .shake{
-    animation: shake 0.5s infinite;
+    animation: shake 2.0s infinite;
 }
 @keyframes shake {
     0% {
-        transform: rotate(360deg);
+        transform: rotateX(120deg) rotateZ(-120deg);
+    }
+    10% {
+        transform: rotateX(-110deg) rotateZ(-280deg);
+    }
+    25% {
+        transform: rotateX(-100deg) rotateZ(280deg);
     }
     50% {
-        transform: rotate(-180deg);
+        transform: rotateY(-150deg) rotateZ(-240deg);
+    }
+    75% {
+        transform: rotateY(110deg) rotateZ(120deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotateX(150deg) rotateZ(-120deg);
     } 
 }
